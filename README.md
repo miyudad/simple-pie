@@ -28,7 +28,7 @@ some code based on web3 and meteor  which show some demos to access ethereum
 ## metetor常见命令：
   * meteor 启动服务器
   * ctrl+c 停止服务器
-2. geth启动命令：
+## geth启动命令：
   * 先下载一个geth到本地目录
   * 打开iterm程序，切到geth所在文件夹，输入./geth --rpc --rpccorsdomain "http://localhost:3000"
   * 这个命令的作用是在本地建立一个ethereum节点，作为整个以太坊网络的一个分布式节点，这样我们有时候（比如web3）需要与节点通讯的时候，就不需要找第三方了。当然如果你偷懒，不想在本地运行这个服务，也可以的。
