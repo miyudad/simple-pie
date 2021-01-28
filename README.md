@@ -17,11 +17,11 @@ some code based on web3 and meteor  which show some demos to access ethereum
 3. 实现了对gate的API，Uniswap的API的一些交互，算是对DEFI有个入门的认识
 
 ## 其他用到的主要依赖包：
-1. web3
-2. bip39
-3. ethers
-3. @uniswap/sdk
-4. gate-api
+1. web3  访问eth网络的一个初步封装的nodejs API库库
+2. bip39  助记词相关的一个nodejs包
+3. ethers  访问eth网络的一个封装的比较好的nodejs API库
+3. @uniswap/sdk  访问uniswap的一个nodejs API库
+4. gate-api  访问gate.io的nodejs API库
 
 以上都用npm install --save的形式进行安装添加
 
