@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { ChainId, Token, WETH, Fetcher, Route } from '@uniswap/sdk'
 
+/**
+ * 代码貌似有问题，获得的价格不太准，暂时不知道为什么
+ * 2021.2.2
+ */
 
 export const Uniswap = () => {
   const [amplPrice, setAmplPrice] = useState(0);
