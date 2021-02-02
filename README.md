@@ -15,6 +15,12 @@ some code based on web3 and meteor  which show some demos to access ethereum
 1. 讀取ETH链上地址的ETH币和TOKEN数量
 2. 生成一个Ethereum冷钱包的，不触网，包含址/私钥/助记词，摆脱对市面上imtoken等钱包的担忧。
 3. 实现了对gate的API，Uniswap的API的一些交互，算是对DEFI有个入门的认识
+4. 实现了ETH的转账，利用ethers的包完成的
+5. 实现了ERC20 Token的转账，利用web3和ethereumjs-tx的包完成的，这里踩了一个巨坑，主要是因为包的更新换代太快了，很多例子都是基于老版本的包
+* 坑1:Transaction包的引用，google或者百度很多例子都是直接var Tx = require('ethereumjs-tx')，而最新版的包要求这样引用：var Tx = require('ethereumjs-tx').Transaction;
+* 坑2:调用web3生成nonce时，需要时异步方式或者在回调里进行下一步操作，不然转账虽然不出错，但是并不上链。
+* 坑3:转账数量，需要和精度配合
+* 坑4:txData的构造，toAddress要是合约地址，value需要为0，究其原理：ERC20的转账，其实是发起一个ETH为0的ETH转账请求给合约地址，由合约来完成给目标地址的Token转账
 
 ## 其他用到的主要依赖包：
 1. web3  访问eth网络的一个初步封装的nodejs API库库
