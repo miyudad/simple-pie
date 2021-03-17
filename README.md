@@ -13,7 +13,7 @@ some code based on web3 and meteor  which show some demos to access ethereum
 
 ## 主要功能：
 1. 讀取ETH链上地址的ETH币和TOKEN数量
-2. 生成一个Ethereum冷钱包的，不触网，包含址/私钥/助记词，摆脱对市面上imtoken等钱包的担忧。
+2. 生成一个BTC/Ethereum冷钱包，不触网，包含址/私钥/助记词，摆脱对市面上imtoken等钱包的担忧。一套助记词搞定btc和eth系
 3. 实现了对gate的API，Uniswap的API的一些交互，算是对DEFI有个入门的认识
 4. 实现了ETH的转账，利用ethers的包完成的
 5. 实现了ERC20 Token的转账，利用web3和ethereumjs-tx的包完成的，这里踩了一个巨坑，主要是因为包的更新换代太快了，很多例子都是基于老版本的包
